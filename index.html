@@ -1,0 +1,200 @@
+<!-- index.html with my hidden notes, haha-->
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Meta & Page setup -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vincent Ombayo — Portfolio</title>
+  <meta name="description" content="Portfolio of Vincent Ombayo — developer, designer, and problem solver.">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External CSS stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ============= MAIN CONTAINER ============= -->
+  <div class="container">
+
+    <!-- ======= HEADER SECTION ======= -->
+    <!-- Contains the site logo, name, tagline, and navigation links -->
+    <header class="site-brand">
+      <div class="brand">
+        <div class="logo">VO</div>
+        <div>
+          <h1>Vincent Ombayo</h1>
+          <p>Frontend Developer • UI/UX hobbyist • Problem solver</p>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <nav class="top-nav">
+        <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Projects</button>
+        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button>
+        <a class="btn primary" href="#" download="Vincent-Ombayo-Resume.pdf">Download CV</a>
+      </nav>
+    </header>
+
+    <!-- ======= MAIN CONTENT SECTION ======= -->
+    <main class="card">
+
+      <!-- === HERO / INTRO SECTION === -->
+      <!-- Brief introduction with my name, tagline, and call-to-action -->
+      <section class="hero">
+        <div class="intro">
+          <h2>Hi — I'm <span style="color:var(--accent)">Vincent</span>, I craft modern web experiences.</h2>
+          <p class="lead">I build accessible, responsive front-end interfaces that help products tell clear stories and scale. I enjoy turning complex problems into simple, beautiful solutions.</p>
+
+          <!-- Technology chips for quick skill highlights -->
+          <div class="chips" aria-hidden>
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">React</div>
+            <div class="chip">UI Design</div>
+          </div>
+        </div>
+
+        <!-- Call-to-action panel on the right -->
+        <div class="hero-cta" style="text-align:right">
+          <p style="margin:0;color:var(--muted)">Available for freelance & full-time</p>
+          <div style="height:14px"></div>
+          <a href="#contact" class="btn primary">Get in touch</a>
+        </div>
+      </section>
+
+      <!-- === ABOUT SECTION === -->
+      <!-- Short professional bio and skills overview -->
+      <section class="about" id="about">
+        <h3>About me</h3>
+        <p>I'm a frontend developer focused on building accessible user interfaces and polished interactions. I love collaborating with product teams to design and implement delightful user experiences.</p>
+
+        <div class="grid-2">
+          <!-- Left: Experience summary -->
+          <div class="card-slim">
+            <h4 style="margin-top:0">Experience</h4>
+            <p class="muted" style="color:var(--muted);margin:8px 0 0 0">2+ years building modern web apps. Experience with component-driven design and performance optimization.</p>
+          </div>
+
+          <!-- Right: Skills list -->
+          <div class="card-slim skills">
+            <h4 style="margin-top:0">Skills</h4>
+            <ul style="list-style:none;padding:0;margin:10px 0 0 0">
+              <li>Responsive design & accessibility</li>
+              <li>State-driven UI (React)</li>
+              <li>CSS architecture (BEM, utility-first)</li>
+              <li>Version control (Git)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- === PROJECTS SECTION === -->
+      <!-- Displays featured projects with tags and short descriptions -->
+      <section class="projects" id="projects">
+        <h3 style="margin-bottom:10px">Selected projects</h3>
+
+        <!-- Example project 1 -->
+        <article class="project">
+          <div class="meta">
+            <h4>Project Title One</h4>
+            <p>Short description of the project — what it does, your role, and the tech used.</p>
+            <div class="tags">
+              <div class="tag">React</div>
+              <div class="tag">API</div>
+            </div>
+          </div>
+          <div style="min-width:110px;text-align:right">
+            <a class="btn" href="#">View</a>
+          </div>
+        </article>
+
+        <!-- Example project 2 -->
+        <article class="project">
+          <div class="meta">
+            <h4>Project Title Two</h4>
+            <p>Short description of the project — what it does, your role, and the tech used.</p>
+            <div class="tags">
+              <div class="tag">HTML/CSS</div>
+              <div class="tag">Design</div>
+            </div>
+          </div>
+          <div style="min-width:110px;text-align:right">
+            <a class="btn" href="#">View</a>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- === CONTACT SECTION === -->
+      <!-- Contact form using mailto:  -->
+      <section id="contact" style="margin-top:18px">
+        <h3>Contact</h3>
+        <p style="color:var(--muted);margin-top:6px">Want to start a project or just say hi? Send a message — I'll reply within a few days.</p>
+
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain" style="margin-top:12px;display:grid;gap:8px">
+          <input name="name" placeholder="Your name" class="input">
+          <input name="email" placeholder="Your email" class="input">
+          <textarea name="message" rows="4" placeholder="Message" class="input"></textarea>
+          <div style="display:flex;gap:8px">
+            <button class="btn primary" type="submit">Send message</button>
+            <button class="btn" type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- ======= SIDEBAR SECTION ======= -->
+    <!-- Sticky sidebar with quick contact info and profile summary -->
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div style="display:flex;gap:14px;align-items:center">
+          <div class="avatar">VO</div>
+          <div>
+            <div style="font-weight:700">Vincent Ombayo</div>
+            <div style="color:var(--muted);font-size:13px">Frontend Developer</div>
+          </div>
+        </div>
+
+        <!-- Contact links -->
+        <div class="contact">
+          <a href="mailto:youremail@example.com">cto.vincent@gmail.com</a>
+          <a href="#">linkedin.com/in/vincentombayo</a>
+          <a href="#">github.com/vincentombayo</a>
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:8px">
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn primary" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div style="height:18px"></div>
+
+      <!-- Quick facts card -->
+      <div class="card-slim">
+        <h4 style="margin-top:0">Quick facts</h4>
+        <ul style="list-style:none;padding:0;margin:10px 0 0 0;color:var(--muted)">
+          <li>Based in Nakuru</li>
+          <li>Open to freelance & full-time</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ======= FOOTER ======= -->
+    <!-- Displays copyright with dynamic year -->
+    <footer>
+      <div>Built by Vincent Ombayo — © <span id="year"></span></div>
+    </footer>
+  </div>
+
+  <!-- ======= SCRIPTS ======= -->
+  <script>
+    // Automatically update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
