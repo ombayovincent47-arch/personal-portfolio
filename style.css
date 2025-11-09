@@ -9,6 +9,13 @@
   --maxwidth:1100px;
   --gap:24px;
 }
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 14px;
+}
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
