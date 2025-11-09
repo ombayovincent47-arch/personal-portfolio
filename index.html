@@ -1,4 +1,4 @@
-<!-- index.html with my hidden notes, haha-->
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vincent Ombayo — Portfolio</title>
-  <meta name="description" content="Portfolio of Vincent Ombayo — developer, designer, and problem solver.">
+  <meta name="description" content="Portfolio of Vincent Ombayo — frontend developer and UI/UX enthusiast building user-centered digital experiences.">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -19,13 +19,13 @@
   <div class="container">
 
     <!-- ======= HEADER SECTION ======= -->
-    <!-- Contains the site logo, name, tagline, and navigation links -->
+    <!-- Top navigation and brand section -->
     <header class="site-brand">
       <div class="brand">
         <div class="logo">VO</div>
         <div>
           <h1>Vincent Ombayo</h1>
-          <p>Frontend Developer • UI/UX hobbyist • Problem solver</p>
+          <p>Frontend Developer • UI/UX Enthusiast • Problem Solver</p>
         </div>
       </div>
 
@@ -37,17 +37,15 @@
       </nav>
     </header>
 
-    <!-- ======= MAIN CONTENT SECTION ======= -->
+    <!-- ======= MAIN CONTENT ======= -->
     <main class="card">
 
-      <!-- === HERO / INTRO SECTION === -->
-      <!-- Brief introduction with my name, tagline, and call-to-action -->
+      <!-- === HERO / INTRO === -->
       <section class="hero">
         <div class="intro">
-          <h2>Hi — I'm <span style="color:var(--accent)">Vincent</span>, I craft modern web experiences.</h2>
-          <p class="lead">I build accessible, responsive front-end interfaces that help products tell clear stories and scale. I enjoy turning complex problems into simple, beautiful solutions.</p>
+          <h2>Hey there — I'm <span style="color:var(--accent)">Vincent Ombayo</span>.</h2>
+          <p class="lead">I’m a passionate frontend developer who loves crafting clean, responsive, and user-friendly web experiences. I enjoy transforming ideas into digital products that are both beautiful and functional.</p>
 
-          <!-- Technology chips for quick skill highlights -->
           <div class="chips" aria-hidden>
             <div class="chip">HTML</div>
             <div class="chip">CSS</div>
@@ -57,98 +55,91 @@
           </div>
         </div>
 
-        <!-- Call-to-action panel on the right -->
         <div class="hero-cta" style="text-align:right">
-          <p style="margin:0;color:var(--muted)">Available for freelance & full-time</p>
+          <p style="margin:0;color:var(--muted)">Available for freelance and full-time opportunities</p>
           <div style="height:14px"></div>
-          <a href="#contact" class="btn primary">Get in touch</a>
+          <a href="#contact" class="btn primary">Let’s work together</a>
         </div>
       </section>
 
       <!-- === ABOUT SECTION === -->
-      <!-- Short professional bio and skills overview -->
       <section class="about" id="about">
-        <h3>About me</h3>
-        <p>I'm a frontend developer focused on building accessible user interfaces and polished interactions. I love collaborating with product teams to design and implement delightful user experiences.</p>
+        <h3>About Me</h3>
+        <p>Hi! I’m Vincent, a frontend developer with a focus on accessibility, performance, and clean design. My goal is to bridge creativity and functionality — building websites that not only look great but also offer seamless user experiences. I’m constantly learning and improving, staying up to date with the latest web technologies.</p>
 
         <div class="grid-2">
-          <!-- Left: Experience summary -->
           <div class="card-slim">
             <h4 style="margin-top:0">Experience</h4>
-            <p class="muted" style="color:var(--muted);margin:8px 0 0 0">2+ years building modern web apps. Experience with component-driven design and performance optimization.</p>
+            <p class="muted">Over 2 years of hands-on experience developing modern web interfaces, collaborating with teams, and creating smooth user experiences.</p>
           </div>
 
-          <!-- Right: Skills list -->
           <div class="card-slim skills">
             <h4 style="margin-top:0">Skills</h4>
             <ul style="list-style:none;padding:0;margin:10px 0 0 0">
-              <li>Responsive design & accessibility</li>
-              <li>State-driven UI (React)</li>
-              <li>CSS architecture (BEM, utility-first)</li>
-              <li>Version control (Git)</li>
+              <li>Responsive Web Design</li>
+              <li>JavaScript (ES6+), React</li>
+              <li>CSS Architecture & Animations</li>
+              <li>Version Control (Git, GitHub)</li>
             </ul>
           </div>
         </div>
       </section>
 
       <!-- === PROJECTS SECTION === -->
-      <!-- Displays featured projects with tags and short descriptions -->
       <section class="projects" id="projects">
-        <h3 style="margin-bottom:10px">Selected projects</h3>
+        <h3 style="margin-bottom:10px">Featured Projects</h3>
 
-        <!-- Example project 1 -->
+        <!-- Project 1 -->
         <article class="project">
           <div class="meta">
-            <h4>Project Title One</h4>
-            <p>Short description of the project — what it does, your role, and the tech used.</p>
+            <h4>Portfolio Website Redesign</h4>
+            <p>I redesigned my personal portfolio to better showcase my projects and skills. The new design focuses on simplicity, responsive layout, and a more human touch in content and visuals.</p>
+            <div class="tags">
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              <div class="tag">JavaScript</div>
+            </div>
+          </div>
+          <div style="min-width:110px;text-align:right">
+            <a class="btn" href="https://vincentombayo-portfolio.netlify.app" target="_blank">View Live</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project">
+          <div class="meta">
+            <h4>Task Tracker App</h4>
+            <p>A lightweight web app that helps users organize tasks and boost productivity. It includes features like task creation, progress tracking, and deadline reminders — all built with React.</p>
             <div class="tags">
               <div class="tag">React</div>
               <div class="tag">API</div>
+              <div class="tag">UI/UX</div>
             </div>
           </div>
           <div style="min-width:110px;text-align:right">
-            <a class="btn" href="#">View</a>
+            <a class="btn" href="https://vincentombayo-tasktracker.netlify.app" target="_blank">View Live</a>
           </div>
         </article>
-
-        <!-- Example project 2 -->
-        <article class="project">
-          <div class="meta">
-            <h4>Project Title Two</h4>
-            <p>Short description of the project — what it does, your role, and the tech used.</p>
-            <div class="tags">
-              <div class="tag">HTML/CSS</div>
-              <div class="tag">Design</div>
-            </div>
-          </div>
-          <div style="min-width:110px;text-align:right">
-            <a class="btn" href="#">View</a>
-          </div>
-        </article>
-
       </section>
 
       <!-- === CONTACT SECTION === -->
-      <!-- Contact form using mailto:  -->
       <section id="contact" style="margin-top:18px">
         <h3>Contact</h3>
-        <p style="color:var(--muted);margin-top:6px">Want to start a project or just say hi? Send a message — I'll reply within a few days.</p>
+        <p style="color:var(--muted);margin-top:6px">Have a project in mind or just want to say hello? I’d love to connect — drop me a message below!</p>
 
-        <form action="mailto:youremail@example.com" method="post" enctype="text/plain" style="margin-top:12px;display:grid;gap:8px">
-          <input name="name" placeholder="Your name" class="input">
-          <input name="email" placeholder="Your email" class="input">
-          <textarea name="message" rows="4" placeholder="Message" class="input"></textarea>
+        <form action="mailto:cto.vincent@gmail.com" method="post" enctype="text/plain" style="margin-top:12px;display:grid;gap:8px">
+          <input name="name" placeholder="Your name" class="input" required>
+          <input name="email" placeholder="Your email" class="input" required>
+          <textarea name="message" rows="4" placeholder="Message" class="input" required></textarea>
           <div style="display:flex;gap:8px">
-            <button class="btn primary" type="submit">Send message</button>
+            <button class="btn primary" type="submit">Send Message</button>
             <button class="btn" type="reset">Reset</button>
           </div>
         </form>
       </section>
-
     </main>
 
-    <!-- ======= SIDEBAR SECTION ======= -->
-    <!-- Sticky sidebar with quick contact info and profile summary -->
+    <!-- ======= SIDEBAR ======= -->
     <aside class="sidebar">
       <div class="profile-card">
         <div style="display:flex;gap:14px;align-items:center">
@@ -159,11 +150,10 @@
           </div>
         </div>
 
-        <!-- Contact links -->
         <div class="contact">
-         <a href="mailto:cto.vincent@gmail.com">cto.vincent@gmail.com</a>
-          <a href="linkedin.com/in/vincentombayo">linkedin.com/in/vincentombayo</a>
-          <a href="#">github.com/vincentombayo</a>
+          <a href="mailto:cto.vincent@gmail.com">cto.vincent@gmail.com</a>
+          <a href="https://linkedin.com/in/vincentombayo" target="_blank">linkedin.com/in/vincentombayo</a>
+          <a href="https://github.com/vincentombayo" target="_blank">github.com/vincentombayo</a>
         </div>
 
         <div style="margin-top:12px;display:flex;gap:8px">
@@ -174,25 +164,23 @@
 
       <div style="height:18px"></div>
 
-      <!-- Quick facts card -->
       <div class="card-slim">
-        <h4 style="margin-top:0">Quick facts</h4>
+        <h4 style="margin-top:0">Quick Facts</h4>
         <ul style="list-style:none;padding:0;margin:10px 0 0 0;color:var(--muted)">
-          <li>Based in Nakuru</li>
-          <li>Open to freelance & full-time</li>
+          <li>Based in Nakuru, Kenya</li>
+          <li>Open to freelance & full-time roles</li>
         </ul>
       </div>
     </aside>
 
     <!-- ======= FOOTER ======= -->
     <footer>
-      <div>Built by Vincent Ombayo — © <span id="year"></span></div>
+      <div>Designed & built by Vincent Ombayo — © <span id="year"></span></div>
     </footer>
   </div>
 
-  <!-- ======= SCRIPTS ======= -->
+  <!-- Footer Script -->
   <script>
-    // Automatically update year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
