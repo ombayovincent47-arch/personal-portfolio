@@ -10,11 +10,12 @@
   --gap:24px;
 }
 .profile-photo {
-  width: 5px;
-  height: 5px;
-  border-radius: 10%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px;
+  margin-right: 12px;
+  vertical-align: middle;
 }
 *{box-sizing:border-box}
 html,body{height:100%}
