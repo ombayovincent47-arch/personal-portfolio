@@ -10,8 +10,8 @@
   --gap:24px;
 }
 .profile-photo {
-  width: 96px;
-  height: 96px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 14px;
